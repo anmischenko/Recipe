@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="drawer_list">
-        <item>Сырники</item>
-        <item>Сырники</item>
-        <item>Сырники</item>
-        <item>Сырники</item>
-        <item>Сырники</item>
-        <item>Сырники</item>
+        <item>Выпечка</item>
+        <item>Мороженое</item>
+        <item>Салаты</item>
+        <item>Супы</item>
     </string-array>
 
+    <string-array name="bakery">
+        <item>Шарлотка|sharlotka.png</item>
+        <item>Сырники|sirniki.png</item>
+        <item>Песочное печенье</item>
+    </string-array>
+
+    <string-array name="ice_cream">
+        <item>Ванильное мороженое</item>
+        <item>Щербет</item>
+    </string-array>
 </resources>
