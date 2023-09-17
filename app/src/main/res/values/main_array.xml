@@ -10,11 +10,19 @@
     <string-array name="bakery">
         <item>Шарлотка|sharlotka.png</item>
         <item>Сырники|sirniki.png</item>
-        <item>Песочное печенье</item>
+        <item>Песочное печенье|sirniki.png</item>
     </string-array>
 
     <string-array name="ice_cream">
-        <item>Ванильное мороженое</item>
-        <item>Щербет</item>
+        <item>Ванильное мороженое|sirniki.png</item>
+        <item>Щербет|sirniki.png</item>
+    </string-array>
+
+    <string-array name="salat">
+
+    </string-array>
+
+    <string-array name="sup">
+
     </string-array>
 </resources>
