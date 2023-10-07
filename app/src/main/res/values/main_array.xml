@@ -8,14 +8,14 @@
     </string-array>
 
     <string-array name="bakery">
-        <item>Шарлотка|sharlotka.png</item>
-        <item>Сырники|sirniki.png</item>
-        <item>Песочное печенье|sirniki.png</item>
+        <item>Шарлотка|sharlotka.png|sharlotka.html</item>
+        <item>Сырники|sirniki.png|sharlotka.html</item>
+        <item>Песочное печенье|sirniki.png|sharlotka.html</item>
     </string-array>
 
     <string-array name="ice_cream">
-        <item>Ванильное мороженое|sirniki.png</item>
-        <item>Щербет|sirniki.png</item>
+        <item>Ванильное мороженое|sirniki.png|sharlotka.html</item>
+        <item>Щербет|sirniki.png|sharlotka.html</item>
     </string-array>
 
     <string-array name="salat">

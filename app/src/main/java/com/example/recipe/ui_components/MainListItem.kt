@@ -26,12 +26,15 @@ import com.example.recipe.utils.DrawerEvents
 import com.example.recipe.utils.ListItem
 
 @Composable
-fun MainListItem(item: ListItem) {
+fun MainListItem(item: ListItem, onClick: (ListItem) -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
             .height(250.dp)
-            .padding(15.dp),
+            .padding(15.dp)
+            .clickable {
+                       onClick(item)
+            },
         shape = RoundedCornerShape(20.dp),
     ) {
         Box(
@@ -40,7 +43,8 @@ fun MainListItem(item: ListItem) {
         ) {
             AssetImage(
                 imageName = item.imageName,
-                contentDescription = item.title
+                contentDescription = item.title,
+                modifier = Modifier.fillMaxSize()
             )
             Text(
                 text = item.title,
@@ -57,7 +61,7 @@ fun MainListItem(item: ListItem) {
 }
 
 @Composable
-fun AssetImage(imageName: String, contentDescription: String) {
+fun AssetImage(imageName: String, contentDescription: String, modifier: Modifier) {
     val context = LocalContext.current
     val assetManager = context.assets
     val inputStream = assetManager.open(imageName)
@@ -66,6 +70,6 @@ fun AssetImage(imageName: String, contentDescription: String) {
         bitmap = bitMap.asImageBitmap(),
         contentDescription = contentDescription,
         contentScale = ContentScale.Crop,
-        modifier = Modifier.fillMaxSize()
+        modifier = modifier
     )
 }
